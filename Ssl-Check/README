@@ -1,0 +1,9 @@
+This template for zabbix 3.4.
+How to use;
+Import the template .
+Copy the script to external script directory.
+#pip install openssl
+#chown zabbix  ssl_check.py
+
+For test
+#./ssl_check yourdomain.com
