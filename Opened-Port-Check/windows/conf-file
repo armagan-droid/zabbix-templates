@@ -1,0 +1,3 @@
+###Paste to bottom of the zabbix_agentd.conf file.
+###Port check via ps script.
+UserParameter=system.oport.discovery,powershell.exe -File "C:\Program Files\Zabbix Agent\portcheck.ps1"

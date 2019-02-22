@@ -1,0 +1,3 @@
+###Paste to bottom of the zabbix_agentd.conf file.
+###Port Check via ss comand
+UserParameter=system.oport.discovery,port_list=$(ss -ltun4 | grep LISTEN | awk '{print $5}' | cut --complement -c 1-2);echo -n '{"data":[';for s in ${port_list}; do echo -n "{\"{#OPORT}\": \"$s\"},";done | sed -e 's:\},$:\}:';echo -n ']}'
