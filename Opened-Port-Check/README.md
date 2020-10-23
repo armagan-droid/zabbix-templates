@@ -1,4 +1,4 @@
-These templates shows opened ports of the system via zabbix discovery and add to be item on zabbix server.
+These templates show opened ports of the system via zabbix discovery and add to be item on zabbix server.
 
 How to use on Linux;
 Copy the configuration from conf-file and paste to bottom of the zabbix_agentd.conf file.
